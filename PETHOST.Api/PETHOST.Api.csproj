@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\User\CreateUser\" />
+    <Folder Include="Features\User\GetUser\" />
+    <Folder Include="Features\User\ActiveUser\" />
+    <Folder Include="Features\User\UpdateUser\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Messaging\" />
+    <Folder Include="Middleware\" />
+    <Folder Include="Startups\" />
+    <Folder Include="Work\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PETHOST.Common\PETHOST.Common.csproj" />
+  </ItemGroup>
+
+</Project>
